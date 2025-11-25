@@ -10,9 +10,12 @@ export function LoginButton() {
         <CardHeader>
           <CardTitle className="text-center">Learning Dashboard</CardTitle>
         </CardHeader>
-        <CardContent className="flex justify-center">
+        <CardContent className="flex flex-col gap-4 justify-center">
           <Button onClick={() => signIn("google")} className="w-full">
             Sign in with Google
+          </Button>
+          <Button onClick={() => signIn("credentials")} variant="outline" className="w-full">
+            Dev Login (No Google)
           </Button>
         </CardContent>
       </Card>
